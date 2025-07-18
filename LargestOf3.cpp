@@ -1,7 +1,6 @@
 //NAME : Dhakshayini Usha R
 //ENTC A2
 //PRN : 24070123039
-//Even or Odd
 #include<iostream>
 
 using namespace std;
