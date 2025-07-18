@@ -102,3 +102,17 @@ Enter 3 numbers: -1 -2 -2
 Enter a alphabet: e
 It is a vowel
 ```
+- Basic calculator using switch case
+```
+Enter 2 numbers for basic calculator: 44 88
+Enter 1 for addition
+Enter 2 for Subtraction
+Enter 3 for Multiplication
+Enter 4 for Division
+4
+Quotient: 0.5
+```
+- Weekday Display
+```
+
+```
