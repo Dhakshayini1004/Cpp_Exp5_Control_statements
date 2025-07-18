@@ -1,22 +1,24 @@
-//Name : Dhakshayini Usha R
-//PRN : 24070123039
+//Dhakshayini Usha R
+//PRN-24070123039
 //ENTC A2
 
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int main(){
-    char alpha;
-    char A,E,I,O,U,a,e,i,o,u;
+int main() {
     
-    cout<<"Enter an alphabet :";
-    cin>>alpha;
+    char alphabet;
     
-    if(alpha == A| alpha == E | alpha == I | alpha == O | alpha == U | alpha == a | alpha == e | alpha == i | alpha == o | alpha == u){
-        cout<<alpha<<" is a vowel"<<endl;
+    cout << "Enter a alphabet: ";
+    cin >> alphabet;
+    
+    if(alphabet=='A' || alphabet=='E' || alphabet=='I' || alphabet=='O' || alphabet=='U' || alphabet=='a' || alphabet=='e' || alphabet=='i' || alphabet=='o' || alphabet=='u')
+    {
+        cout << "It is a vowel";
     }
     else{
-        cout<<alpha<<" is a consonant"<<endl;
+        cout << "It is a consonant";
     }
+
     return 0;
 }
