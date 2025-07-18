@@ -97,3 +97,8 @@ All are equal
 Enter 3 numbers: -1 -2 -2
 -1 is greatest
 ```
+- Vowel or consonant
+```
+Enter a alphabet: e
+It is a vowel
+```
