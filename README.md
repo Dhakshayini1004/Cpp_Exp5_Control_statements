@@ -1,81 +1,74 @@
-# C++ Experiment 4: To study and implement C++ Bitwise Operators
+# C++ Experiment 5: To study and implement C++ decision making statements
 
 ## Aim
 
 To:
-1. To do basic bitwise operators.
-2. To set and reset specific bits of given number
+1. To implement if-else and nested if statements.
+2. To implement swtich case.
 
 ---
 
 ## Objectives
 
-- To use bitwise operators(`&`,`|`,`^`,`~`,`<<`,`>>`)
-- To understand the logic behind setting and resetting specific bits using left shift and bitwise operators.
+- To use if and nested if statements to code boundary conditions.
+- To use `exit(0)` and `break` on switch case and understand their uses.
+- TO understand the syntax and structure of switch case.
 
 ---
 
 ## Theory
-### What are Bitwise Operators?
-- Bitwise operators perform operations directly on binary bits of integers.
-- Each bit is either 0 or 1, and these operators let us manipulate bits individually, unlike arithmetic or logical operators which operate on entire values.
+### If-else Statement
+- If-else is a control statement that selects the code to be executed depending on whethere the entered condtion is true or false. If the entered condition is true, the code under if is executed, whereas if false, the code under else is executed.
+```
+ if(condition){
+      code
+}
+else{
+      code
+)
+```
+### Swtich Case
+- Switch case is a selection control statement like if else, however it is used when a lot of options are possible.
+- When you have multiple values to check for a single variable.
+- Alternative to writing multiple if-else if statements.
+- If you don't use break, control will continue to the next case even if the match was found.
+- expression is evaluated.
+- The value is matched with one of the case labels.
+- If a match is found, execution starts from that case.
+- `break` is used to exit the switch block after a match.
+- If no match is found, default (if present) is executed.
 
-- They are commonly used in:
-- Embedded systems and microcontrollers
-- Cryptography
-- Digital logic simulation
-- Memory-efficient coding (e.g., flags and masks)
   
-| Operator    | Symbol | Description                                     |
-|-------------|--------|-------------------------------------------------|
-| AND         | `&`    | Sets bit to 1 only if both bits are 1           |
-| OR          | `\|`   | Sets bit to 1 if at least one bit is 1          |
-| XOR         | `^`    | Sets bit to 1 if only one of the bits is 1      |
-| NOT         | `~`    | Inverts all bits (0 becomes 1, 1 becomes 0)     |
-| Left Shift  | `<<`   | Shifts bits to the left, multiplying by 2       |
-| Right Shift | `>>`   | Shifts bits to the right, dividing by 2         |
+  ```
+  switch (choice) {
+    case value1:
+        // Code block for value1
+        break;
 
-    
+    case value2:
+        // Code block for value2
+        break;
 
-###  Set and Reset a Bit
-- In many applications, especially in embedded systems, hardware control, and memory optimization, we often need to change only one specific bit in a number — not the whole number.
-
-- This is useful for:
--- Turning on/off a feature (flags)
--- Controlling specific hardware bits (like LEDs, relays, sensors)
--- Performing fast and memory-efficient operations
-
-- Setting a bit means changing a specific bit to 1, regardless of its current value.
-- `1 <<` pos shifts 1 to the left by pos bits, creating a mask.
-- Bitwise OR `|` ensures the bit at that position becomes 1.
-- Other bits remain unchanged.
-
-- Resetting a bit means changing a specific bit to 0, regardless of its current value.
-- 1 << pos creates a mask with 1 at the desired position.
-- `~` inverts the mask to have 0 at the bit we want to reset.
-- Bitwise AND & turns that bit to 0, leaving other bits unchanged.
+    // You can have any number of case statements
+    default:
+        // Code block if no case matches
+  }
+  ```
 
 ## Program Description
 
-### ✅ Part 1: Syntax
-- We define 2 numbers and perform bitwise operations on them.
-- `AND` returns 1 only when both the bit inputs are 1.
-- `Right Shift` shifts all the 1s towards right side, basically divides the number by 2.
-- `Left Shift` shifts all the 1s towards left side, basically multiplies the number by 2.
-- `XOR` returns one only when the bit inputs are not equal to each other.
-- `NOT` returns the Two's complement of the entered number.
-- `OR` returns 1 even if any of the bit input is 1.
-- However, the output of the program is decimal.
-  
-### ✅ Part 2: Logic
- - Set specific bits -  num | (1 << bit_position)
- - Reset specific bits - num & (~(1 << bit_position))
----
+### Syntax
+- We define variables to hold the user-input values.
+- When using switch case, the variable to be evaluated is `(variable)`, according to the value of variable, the code is executed.
+- However on if-else or nested ifs, a condition is given `if()`,thus if true, condition under if is executed or the code under else.
+- exit(0); is a function call that immediately terminates the program. 0 means successful or normal termination.
 
 ## Concepts Used
 
-- Bitwise Operator(`&`,`|`,`^`,`~`,`<<`,`>>`)
-- Set and reset specific bits
+- if-else statements
+- Nested if statements
+- Switch case
+- `break`,`exit(0)`
 
 ---
 ### 🧪 Sample Output
