@@ -50,3 +50,14 @@ int main(){
     
     return 0;
 }
+
+/* Sample Output 
+Enter 3 numbers: -1 1 0
+1 is greatest
+
+Enter 3 numbers: 2 2 2
+All are equal
+
+Enter 3 numbers: -1 -2 -2
+-1 is greatest
+*/
