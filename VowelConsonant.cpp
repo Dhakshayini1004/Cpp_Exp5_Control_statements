@@ -22,3 +22,6 @@ int main() {
 
     return 0;
 }
+/*Sample Output
+Enter a alphabet: e
+It is a vowel*/
