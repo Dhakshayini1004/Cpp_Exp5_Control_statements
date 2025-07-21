@@ -19,3 +19,6 @@ int main(){
     }
     return 0;
 }
+/*Sample Output
+Enter a number for odd-even test: 3456
+The entered number 3456 is even*/
