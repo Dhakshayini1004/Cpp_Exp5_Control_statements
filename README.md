@@ -110,6 +110,15 @@ Enter 4 for Division
 4
 Quotient: 0.5
 ```
+```
+Enter 2 numbers for basic calculator: 44 0
+Enter 1 for addition
+Enter 2 for Subtraction
+Enter 3 for Multiplication
+Enter 4 for Division
+4
+Invalid
+```
 - Weekday Display
 ```
 Enter a number
