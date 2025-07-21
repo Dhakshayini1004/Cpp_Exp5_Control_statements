@@ -7,6 +7,11 @@ To:
 2. To implement swtich case.
 
 ---
+## Tool Used
+
+VS Code
+
+---
 
 ## Objectives
 
