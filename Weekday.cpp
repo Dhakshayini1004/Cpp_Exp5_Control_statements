@@ -46,3 +46,13 @@ int main(){
     }
     return 0;
 }
+
+/*Sample Output
+Enter a number
+7
+It's a Sunday!! The real enjoyment of next week begins 
+
+Enter a number
+10
+Invalid
+*/
