@@ -44,3 +44,21 @@ int main(){
     }
     return 0;
 }
+
+/*Sample Output
+Enter 2 numbers for basic calculator: 44 88
+Enter 1 for addition
+Enter 2 for Subtraction
+Enter 3 for Multiplication
+Enter 4 for Division
+4
+Quotient: 0.5
+
+Enter 2 numbers for basic calculator: 44 0
+Enter 1 for addition
+Enter 2 for Subtraction
+Enter 3 for Multiplication
+Enter 4 for Division
+4
+Invalid
+*/
