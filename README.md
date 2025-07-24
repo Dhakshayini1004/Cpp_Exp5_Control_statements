@@ -1,88 +1,135 @@
-# C++ Experiment 5: To study and implement C++ decision making statements
+# Experiment 5: To Study and Implement C++ Decision-Making Statements
 
 ## Aim
 
-To:
-1. To implement if-else and nested if statements.
-2. To implement swtich case.
+To understand and implement decision-making statements in C++ using:
+- if, if-else, and nested if-else constructs.
+- switch-case statement with break and exit(0).
 
 ---
+
 ## Tool Used
 
 VS Code
 
----
+--- 
 
 ## Objectives
 
-- To use if and nested if statements to code boundary conditions.
-- To use `exit(0)` and `break` on switch case and understand their uses.
-- TO understand the syntax and structure of switch case.
+- To apply conditional logic using if and nested if-else.
+- To implement multi-branch decision logic using switch-case.
+- To learn the importance of break, exit(0) in flow control.
+- To differentiate when to use if-else and when to prefer switch.
 
 ---
 
 ## Theory
-### If-else Statement
-- If-else is a control statement that selects the code to be executed depending on whethere the entered condtion is true or false. If the entered condition is true, the code under if is executed, whereas if false, the code under else is executed.
+
+### If-Else Statement
+
+- Used for conditional branching.
+- The code inside the if block executes only when the condition evaluates to true.
+- Otherwise, the else block is executed.
+- Syntax:
 ```
- if(condition){
-      code
+if (condition) {
+    // Executes if condition is true
+} else {
+    // Executes if condition is false
 }
-else{
-      code
-)
 ```
-### Swtich Case
-- Switch case is a selection control statement like if else, however it is used when a lot of options are possible.
-- When you have multiple values to check for a single variable.
-- Alternative to writing multiple if-else if statements.
-- If you don't use break, control will continue to the next case even if the match was found.
-- expression is evaluated.
-- The value is matched with one of the case labels.
-- If a match is found, execution starts from that case.
-- `break` is used to exit the switch block after a match.
-- If no match is found, default (if present) is executed.
 
-  
-  ```
-  switch (choice) {
+--- 
+
+### Nested If-Else
+
+- if or if-else inside another if or else block.
+- Useful when multiple conditions are to be tested in sequence.
+
+Syntax:
+```cpp
+if (condition1) {
+    // Code
+} else {
+    if (condition2) {
+        // Code
+    } else {
+        // Code
+    }
+}
+```
+
+---
+
+### Switch-Case Statement
+
+- An efficient way to compare a variable against multiple constant values.
+- Each case is followed by a constant and a block of code.
+- break prevents fall-through; default is executed when no match is found.
+
+Syntax:
+```
+switch (variable) {
     case value1:
-        // Code block for value1
+        // code
         break;
-
     case value2:
-        // Code block for value2
+        // code
         break;
-
-    // You can have any number of case statements
     default:
-        // Code block if no case matches
-  }
-  ```
+        // code
+}
+```
 
-## Program Description
+--- 
 
-### Syntax
-- We define variables to hold the user-input values.
-- When using switch case, the variable to be evaluated is `(variable)`, according to the value of variable, the code is executed.
-- However on if-else or nested ifs, a condition is given `if()`,thus if true, condition under if is executed or the code under else.
-- exit(0); is a function call that immediately terminates the program. 0 means successful or normal termination.
+#### Points to remember:
+- Without break, control will continue into the next case even after a match.
+- default is optional but recommended to handle unexpected inputs.
+
+---
 
 ## Concepts Used
 
-- if-else statements
-- Nested if statements
-- Switch case
-- `break`,`exit(0)`
+- `if`, `if-else`, `nested if-else` statements
+- switch-case
+- `break`
+- `exit(0)`
 
----
-### 🧪 Sample Output
-- Even-Odd test
+--- 
+
+## Program Description
+
+#### Programs are based on decision-making tasks such as:
+  - Even-odd number checking
+  - Finding the largest of three numbers
+  - Vowel or consonant detection
+  - Basic calculator using switch
+  - Weekday display using switch
+
+- if-else is used when comparisons involve conditions or ranges.
+- switch-case is used when comparing a variable against multiple fixed values.
+- break is used to stop further execution inside switch once a case is matched.
+- exit(0) is used to terminate the program early in special cases.
+
+## Execution Steps
+
+1. Initialize loop/control variable(s).
+2. Check the condition or switch expression.
+3. If condition is true or a case matches, execute corresponding code block.
+4. Use break or exit(0) as required.
+5. Print result/output.
+6. Continue or end the program.
+
+## Sample Output
+
+Even-Odd Test:
 ```
 Enter a number for odd-even test: 3456
 The entered number 3456 is even
 ```
--  Finding Largest of 3 numbers without logical functions
+
+Finding Largest of 3 Numbers:
 ```
 Enter 3 numbers: -1 1 0
 1 is greatest
@@ -95,12 +142,14 @@ All are equal
 Enter 3 numbers: -1 -2 -2
 -1 is greatest
 ```
-- Vowel or consonant
+
+Vowel or Consonant:
 ```
 Enter a alphabet: e
 It is a vowel
 ```
-- Basic calculator using switch case
+
+Basic Calculator using Switch Case:
 ```
 Enter 2 numbers for basic calculator: 44 88
 Enter 1 for addition
@@ -119,14 +168,16 @@ Enter 4 for Division
 4
 Invalid
 ```
-- Weekday Display
+
+Weekday Display:
 ```
 Enter a number
 7
-It's a Sunday!! The real enjoyment of next week begins 
+It's a Sunday!! The real enjoyment of next week begins
 ```
 ```
 Enter a number
 10
 Invalid
 ```
+
