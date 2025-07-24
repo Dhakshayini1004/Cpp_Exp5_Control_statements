@@ -31,7 +31,7 @@ VS Code
 - The code inside the if block executes only when the condition evaluates to true.
 - Otherwise, the else block is executed.
 - Syntax:
-```
+```cpp
 if (condition) {
     // Executes if condition is true
 } else {
@@ -68,7 +68,7 @@ if (condition1) {
 - break prevents fall-through; default is executed when no match is found.
 
 Syntax:
-```
+```cpp
 switch (variable) {
     case value1:
         // code
